@@ -19,3 +19,17 @@
 //     username: faker.username()
 //   }
 // })
+
+const Factory = use('Factory')
+Factory.blueprint('App/Models/Country', (faker)=>{
+    return{
+        country: faker.country(),
+        capital: faker.city(),
+        population: faker.integer()
+    }
+   
+})
+
+
+
+

@@ -19,5 +19,5 @@ const Route = use('Route')
 Route.get('/', "WorldcapitalController.displayCapital")
 
 Route.post('/', 'WorldcapitalController.addCapital')
-
-Route.delete('/', 'WorldcapitalController.deleteCapital')
+Route.patch('/:id', 'WorldCapitalController.updateCapital')
+Route.delete('/:id', 'WorldcapitalController.deleteCapital')
